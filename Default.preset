@@ -226,12 +226,13 @@ RemoveFaxPrinter                # AddFaxPrinter
 
 ### Chocolatey Install Tweaks ###
 InstallChoco
-Install ChocoPackages
 
 ### Unpinning ###
 UnpinStartMenuTiles
 # UnpinTaskbarIcons
 
 ### Auxiliary Functions ###
-WaitForKey
-Restart
+CallSecondary
+# WaitForKey
+# Restart
+
