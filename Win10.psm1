@@ -3646,8 +3646,42 @@ Function UnpinTaskbarIcons {
 	Remove-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Taskband" -Name "FavoritesResolve" -ErrorAction SilentlyContinue
 }
 
+
+
 ##########
 #endregion Unpinning
+##########
+
+
+
+##########
+#region Chocolatey Functions
+##########
+
+# Install Chocolatey
+Function InstallChoco {
+	Set-ExecutionPolicy Bypass -Scope Process -Force
+	iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+}
+
+# Install These Chocolatey Packages: 
+# Chrome w/RDP, Drive FS, Malwayrebytes, Inkscape, 7zip, vlc, AdobeR, Foxit, Libre, & upgrade task
+Function InstallChocoPackages {
+	choco install googlechrome -y
+	choco install choco install google-drive-file-stream -y
+	choco install chrome-remote-desktop-chrome -y
+	choco install choco install malwarebytes -y
+	choco install inkscape -y
+	choco install 7zip.install -y
+	choco install vlc -y
+	choco install adobereader -y
+	choco install foxitreader -y
+	choco install libreoffice-fresh -y
+	choco install choco-upgrade-all-at-startup -y
+}
+
+##########
+#region Chocolatey Functions
 ##########
 
 
