@@ -224,6 +224,10 @@ RemoveFaxPrinter                # AddFaxPrinter
 # DisableIEEnhancedSecurity     # EnableIEEnhancedSecurity
 # EnableAudio                   # DisableAudio
 
+### Chocolatey Install Tweaks ###
+InstallChoco
+Install ChocoPackages
+
 ### Unpinning ###
 UnpinStartMenuTiles
 # UnpinTaskbarIcons
